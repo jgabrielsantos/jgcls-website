@@ -1,4 +1,3 @@
-import { title } from "process"
 import { HomepageComponentEnums } from "./types"
 
 export class HomepageStyles {
