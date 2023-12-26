@@ -19,7 +19,7 @@ export const Tabs = ({ tabs }: TabsTypes) => {
           <button
             key={index}
             onClick={() => hook.tabClickHandler(tab)}
-            className={buttonItem}
+            className={hook.selectedTab.title === tab.title ? `${buttonItem} border-primary-50` : `${buttonItem} border-transparent`}
           >
             {tab.title}
           </button>

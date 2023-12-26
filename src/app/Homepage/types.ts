@@ -1,1 +1,3 @@
-export type HomepageComponentEnums = 'header'
+export type HomepageComponentEnums = 'main'
+| 'heading'
+| 'link'

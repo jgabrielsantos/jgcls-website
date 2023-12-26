@@ -11,6 +11,7 @@ export class FooterStyles {
       ["align-items", "center"],
       ["padding", "p-4"],
       ["background-color", "bg-white-100"],
+      ["font-size", "text-5xl"],
     ]),
     icon: new Map([
       ["width", "w-10"],

@@ -8,14 +8,14 @@ const Footer = ()  => {
     <footer
       className={wrapper}
     >
-      <a href="">
+      <a href="https://github.com/jgabrielsantos" target="_blank">
         <img
           className={icon}
           src={imageList.Github.src}
           alt={imageList.Github.alt}
         />
       </a>
-      <a href="">
+      <a href="https://www.linkedin.com/in/jgabriel-santos/" target="_blank">
         <img
           className={icon}
           src={imageList.Linkedin.src}

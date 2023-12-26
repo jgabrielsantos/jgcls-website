@@ -17,7 +17,6 @@ export class TabsStyles {
       ["cursor", "pointer"],
       ["padding", "p-2"],
       ["border-width", "border-b-2"],
-      ["border-color", "border-support-warning-50"],
       ["font-size", "text-base"],
       ["font-weight", "font-medium"]
     ])
