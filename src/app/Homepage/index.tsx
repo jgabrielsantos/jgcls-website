@@ -1,6 +1,8 @@
+/* eslint-disable react/jsx-key */
 import { Tabs } from "@/components"
 import { HomepageStyles } from "./styles"
 import { Static } from "./static"
+import { Static as WorkStatic } from "./components/Work/static"
 import { Repository, Work } from "./components"
 import { imageList } from "@/utils/imageList"
 
@@ -63,7 +65,15 @@ const Homepage = () => {
           },
           {
             title: 'Work',
-            element: <Work />
+            element: Object.values(WorkStatic).map((work) => (
+              <Work
+                name={work.name}
+                website={work.website}
+                role={work.role}
+                duration={work.duration}
+                tasks={work.tasks}
+              />
+            ))
           }
         ]}
       />

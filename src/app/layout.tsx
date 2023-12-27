@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} flex flex-col h-screen justify-center items-center p-4`}>
-        <div className='flex-grow overflow-auto mb-[75px]'>
+        <div className='flex-grow overflow-auto pb-[80px]'>
           {children}
         </div>
         <Footer />

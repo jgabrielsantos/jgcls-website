@@ -10,8 +10,8 @@ export class HomepageStyles {
       ["tablet-gap", "tablet:gap-16"],
     ]),
     profileImage: new Map([
-      ["width", "w-72"],
-      ["height", "h-72"],
+      ["width", "w-44"],
+      ["height", "h-44"],
       ["object-fit", "object-cover"],
       ["object-position", "object-top"],
       ["border-radius", "rounded-full"],
@@ -40,15 +40,15 @@ export class HomepageStyles {
       ["width", "w-full"],
     ]),
     repositoryList: new Map([
-      ["dispaly", "flex"],
+      ["display", "flex"],
       ["flex-direction", "flex-col"],
       ["gap", "gap-4"],
     ]),
     introWrapper: new Map([
       ["tablet-width", "tablet:max-w-[50%]"],
-      ["tablet-display", "tablet:flex"],
-      ["tablet-flex-direction", "tablet:flex-col"],
-      ["tablet-align-items", "tablet:items-center"],
+      ["display", "flex"],
+      ["flex-direction", "flex-col"],
+      ["align-items", "items-center"],
     ]),
   }
 

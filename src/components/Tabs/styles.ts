@@ -18,7 +18,9 @@ export class TabsStyles {
       ["padding", "p-2"],
       ["border-width", "border-b-2"],
       ["font-size", "text-base"],
-      ["font-weight", "font-medium"]
+      ["font-weight", "font-medium"],
+      ["tablet-font-size", "tablet:text-lg"],
+      ["tablet-font-weight", "tablet:font-semibold"],
     ])
   }
 
