@@ -1,4 +1,7 @@
 export type HomepageComponentEnums = 'main'
+| 'profileImage'
 | 'title'
 | 'heading'
 | 'link'
+| 'repositoryList'
+| 'introWrapper'

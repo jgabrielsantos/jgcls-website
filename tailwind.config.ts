@@ -49,6 +49,10 @@ const config: Config = {
         },
       }
     },
+    screens: {
+      tablet: '640px',
+      desktop: '1024px',
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
