@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { AppWrapper } from '@/components'
 import { GoogleTagManager } from '@next/third-parties/google'
+import ENVIRONMENT from '@/config/environment'
 
 export const metadata: Metadata = {
   title: 'Gabriel Santos',
@@ -19,7 +20,7 @@ export default function RootLayout({
       <AppWrapper>
         {children}
       </AppWrapper>
-      <GoogleTagManager gtmId='G-DZTC6EE9LM' />
+      <GoogleTagManager gtmId={ENVIRONMENT.APP.GOOGLE_TAG_MANAGER_ID} />
     </html>
   )
 }
