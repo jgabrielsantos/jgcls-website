@@ -31,12 +31,12 @@ export const SideMenu = ({ menuIsOpen, closeMenu }: SideMenuProps) => {
           <img
             src={imageList.CloseIcon.src}
             alt={imageList.CloseIcon.alt}
-            className="w-[36px] h-[36px]"
+            className="w-[28px] h-[28px]"
           />
         </button>
       </div>
 
-      <div className="flex flex-col justify-between items-center w-3/4 h-full py-8 gap-8">
+      <div className="flex flex-col justify-between items-center w-3/4 h-full gap-6">
         <header
           className="flex flex-col justify-start items-center w-full gap-2"
         >
@@ -67,21 +67,21 @@ export const SideMenu = ({ menuIsOpen, closeMenu }: SideMenuProps) => {
         </nav>
 
         <footer className="flex justify-center items-center w-full gap-[55px]">
-          <a href="" target="_blank">
+          <a href="mailto:jgclsdev@gmail.com">
             <img
               src={imageList.Gmail.src}
               alt={imageList.Gmail.alt}
               className="w-[36px] h-[36px]"
             />
           </a>
-          <a href="" target="_blank">
+          <a href="https://www.linkedin.com/in/jgabriel-santos/" target="_blank">
             <img
               src={imageList.Linkedin.src}
               alt={imageList.Linkedin.alt}
               className="w-[36px] h-[36px]"
             />
           </a>
-          <a href="" target="_blank">
+          <a href="https://github.com/jgabrielsantos" target="_blank">
             <img
               src={imageList.Github.src}
               alt={imageList.Github.alt}
