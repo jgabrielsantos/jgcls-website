@@ -7,6 +7,7 @@ import closeIcon from '../../public/images/close-icon.svg'
 import webDevelopmentIcon from '../../public/images/web-development-icon.svg'
 import technicalPlanningIcon from '../../public/images/technical-planning-icon.svg'
 import bugAnalisysIcon from '../../public/images/bug-analysis-icon.svg'
+import externalTabIcon from '../../public/images/external-tab-icon.svg'
 
 export const imageList = {
   Github: {
@@ -44,5 +45,9 @@ export const imageList = {
   BugAnalysisIcon: {
     src: bugAnalisysIcon.src,
     alt: 'Bug Analysis Icon'
+  },
+  ExternalTabIcon: {
+    src: externalTabIcon.src,
+    alt: 'External Tab Icon'
   }
 }

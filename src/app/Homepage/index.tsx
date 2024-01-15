@@ -1,5 +1,6 @@
 import { Card, Chip } from "@/components"
 import { Static } from "./static"
+import { imageList } from "@/utils/imageList"
 
 const Homepage = () => {
   return (
@@ -52,9 +53,14 @@ const Homepage = () => {
               <a
                 href={project.LINK}
                 target="_blank"
-                className="text-base text-normal text-white-100"
+                className="flex items-center justify-start gap-2 text-base text-normal text-white-100"
               >
                 {project.TITLE}
+                <img
+                  src={imageList.ExternalTabIcon.src}
+                  alt={imageList.ExternalTabIcon.alt}
+                  className="w-[16px] h-[16px]"
+                />
               </a>
             </li>
           ))}

@@ -14,6 +14,8 @@ export const ButtonLink = ({ to, children }: ButtonLinkProps) => {
         bg-support-warning-50
         hover:bg-support-warning-100
         text-grayscale-800
+
+        tablet:text-xl
       "
     >
       {children}
