@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const AppWrapper = ({ children }: Record<string, React.ReactNode>) => {
   return (
-    <body className={`${inter.className} flex flex-col justify-center items-center`}>
+    <body className={`${inter.className} flex flex-col justify-center items-center bg-grayscale-700`}>
       {isMobileDevice() && (<Header />)}
       {children}
     </body>
