@@ -14,7 +14,7 @@ export const AppWrapper = ({ children }: Record<string, React.ReactNode>) => {
       flex
       flex-col
       justify-center
-      items-center
+      items-start
       bg-grayscale-700
       tablet:flex-row
     `}>

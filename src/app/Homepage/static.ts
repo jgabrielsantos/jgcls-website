@@ -1,9 +1,11 @@
 import { imageList } from "@/utils/imageList";
 
 export const Static = {
-  TITLE: 'Hey There!',
-  PARAGRAPH0: 'I\'m a Full Stack Developer with a passion for crafting seamless and efficient web applications. Specializing in Next.js, React, TypeScript, Node.js, Express, Prisma, PostgreSQL, and MongoDB, I blend modern front-end techniques with robust back-end solutions to create dynamic and responsive websites.',
-  PARAGRAPH1: 'Whether it\'s developing a brand-new site from scratch or optimizing an existing application, my goal is to deliver high-quality, efficient, and scalable solutions that meet and exceed your expectations.',
+  TITLE: 'Hello There!',
+  PARAGRAPHS: [
+    'I\'m a Full Stack Developer with a passion for crafting seamless and efficient web applications. Specializing in Next.js, React, TypeScript, Node.js, Express, Prisma, PostgreSQL, and MongoDB, I blend modern front-end techniques with robust back-end solutions to create dynamic and responsive websites.',
+    'Whether it\'s developing a brand-new site from scratch or optimizing an existing application, my goal is to deliver high-quality, efficient, and scalable solutions that meet and exceed your expectations.'
+  ],
   SERVICES: {
     TITLE: 'Services',
     LIST: [
