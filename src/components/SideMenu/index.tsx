@@ -83,8 +83,8 @@ export const SideMenu = ({ menuIsOpen, closeMenu }: SideMenuProps) => {
           <ButtonLink to="/">
             Homepage
           </ButtonLink>
-          <ButtonLink to="/service">
-            Service
+          <ButtonLink to="/services">
+            Services
           </ButtonLink>
           <ButtonLink to="/projects">
             Projects

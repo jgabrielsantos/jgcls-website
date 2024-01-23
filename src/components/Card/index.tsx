@@ -1,8 +1,10 @@
 import { CardProps } from "./types";
 
-export const Card = ({ children, extraStyle }: CardProps) => {
+export const Card = ({ children, key, extraStyle }: CardProps) => {
   return (
-    <div className={`
+    <div
+      key={key}
+      className={`
       w-full
       flex
       flex-col
