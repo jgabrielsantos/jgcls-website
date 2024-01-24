@@ -1,82 +1,158 @@
-/* eslint-disable react/jsx-key */
-import { Tabs } from "@/components"
-import { HomepageStyles } from "./styles"
+import { Card, Chip } from "@/components"
 import { Static } from "./static"
-import { Static as WorkStatic } from "./components/Work/static"
-import { Repository, Work } from "./components"
 import { imageList } from "@/utils/imageList"
 
 const Homepage = () => {
-  const styles = new HomepageStyles()
-  const {
-    main,
-    profileImage,
-    title,
-    heading,
-    link,
-    repositoryList,
-    introWrapper
-  } = styles.buildStyleRules()
-
   return (
-    <main className={main}>
-      <div className={introWrapper}>
-        <img
-          src={imageList.Avatar.src}
-          alt={imageList.Avatar.alt}
-          className={profileImage}
-        />
-        <h1 className={title}>João Gabriel Santos&apos; Portfolio</h1>
-        <h2 className={heading}>
-          Hello! I&apos;m a Full Stack Developer with a passion for crafting seamless and efficient web applications. Specializing in Next.js, React, TypeScript, Node.js, Express, Prisma, PostgreSQL, and MongoDB, I blend modern front-end techniques with robust back-end solutions to create dynamic and responsive websites.
-        </h2>
-        <h2 className={heading}>
-          My journey in web development has been driven by a keen interest in both front-end aesthetics and back-end functionality. With Next.js and React, I design intuitive user interfaces that not only look great but also provide an engaging user experience. TypeScript adds a layer of reliability and maintainability to my code, ensuring that my applications are not just functional but also scalable.
-        </h2>
-        <h2 className={heading}>
-          On the server side, Node.js and Express form the backbone of my applications. This powerful duo allows me to build fast and efficient server-side solutions. Prisma&apos;s next-generation ORM capabilities, coupled with PostgreSQL and MongoDB databases, enable me to handle complex data with ease, ensuring data integrity and performance.
-        </h2>
-        <h2 className={heading}>
-          Whether it&apos;s developing a brand-new site from scratch or optimizing an existing application, my goal is to deliver high-quality, efficient, and scalable solutions that meet and exceed client expectations. Dive into my portfolio to explore my projects and see the potential of our future collaboration!
-        </h2>
-      </div>
+    <main className="
+      w-full
+      p-5
+      flex
+      flex-col
+      gap-4
+      items-start
 
-      <Tabs
-        tabs={[
-          {
-            title: 'Projects',
-            element: <div className={repositoryList}>
-              {Object.values(Static.Repositories).map((project, index) => (
-                <Repository
-                  key={index}
-                  title={project.title}
-                  description={project.description}
-                  frontend={project.frontend}
-                  backend={project.backend}
-                />
-              ))}
+      tablet:pt-24
+      tablet:px-10
+      tablet:grid
+      tablet:grid-cols-2
+      tablet:gap-x-14
+      tablet:gap-y-8
+    ">
+      <h1 className="
+        text-3xl
+        font-bold
+        text-white-100
 
-              <a
-                href="https://github.com/jgabrielsantos?tab=repositories"
-                target="_blank"
-                className={link}
-              >Check all the GitHub repositories</a>
-            </div>
-          },
-          {
-            title: 'Work',
-            element: Object.values(WorkStatic).map((work) => (
-              <Work
-                name={work.name}
-                website={work.website}
-                role={work.role}
-                duration={work.duration}
-                tasks={work.tasks}
+        tablet:text-5xl
+        tablet:col-span-2
+      ">
+        {Static.TITLE}
+      </h1>
+      {Static.PARAGRAPHS.map((paragraph, index) => (
+        <p
+          key={index}
+          className="
+            text-base
+            font-medium
+            text-white-100
+
+            tablet:text-medium
+            tablet:text-xl
+            tablet:col-span-2
+        ">
+          {paragraph}
+        </p>
+      ))}
+      <Card>
+        <h2 className="
+          text-2xl
+          font-semibold
+          text-white-100
+          mb-3
+
+          tablet:text-3xl
+        ">
+          {Static.SERVICES.TITLE}
+        </h2>
+        <ul className="flex flex-col items-start gap-5">
+          {Static.SERVICES.LIST.map((service, index) => (
+            <li
+              key={index}
+              className="flex items-center justify-start gap-2.5"
+            >
+              <img
+                src={service.ICON.SRC}
+                alt={service.ICON.ALT}
+                className="w-[36px] h-[36px]"
               />
-            ))
-          }
-        ]}
-      />
+              <p className="
+                text-base
+                text-normal
+                text-white-100
+
+                tablet:text-xl
+              ">
+                {service.NAME}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </Card>
+      <Card extraStyle="col-start-1">
+        <h2 className="
+          text-2xl
+          font-semibold
+          text-white-100
+          mb-3
+
+          tablet:text-3xl
+        ">
+          {Static.FEATURED_PROJECTS.TITLE}
+        </h2>
+        <ul className="flex flex-col items-start gap-5">
+          {Static.FEATURED_PROJECTS.LIST.map((project, index) => (
+            <li
+              key={index}
+              className="flex items-center justify-start gap-2.5"
+            >
+              <a
+                href={project.LINK}
+                target="_blank"
+                className="
+                  flex
+                  items-center
+                  justify-start
+                  gap-2
+                  text-base
+                  font-normal
+                  text-white-100
+
+                  tablet:text-xl
+                ">
+                {project.TITLE}
+                <img
+                  src={imageList.ExternalTabIcon.src}
+                  alt={imageList.ExternalTabIcon.alt}
+                  className="w-[16px] h-[16px]"
+                />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </Card>
+      <Card extraStyle="col-start-2 row-start-4 row-span-2">
+        <h2 className="
+          text-2xl
+          font-semibold
+          text-white-100
+
+          tablet:text-3xl
+        ">
+          {`Ongoing Project - ${Static.ONGOING_PROJECT.TITLE}`}
+        </h2>
+        <div className="flex flex-wrap gap-x-1.5 gap-y-2 my-3">
+          {Static.ONGOING_PROJECT.TECH.map((tech, index) => <Chip key={index} name={tech} />)}
+        </div>
+        <p className="
+          text-base
+          font-normal
+          text-white-100
+
+          tablet:text-xl
+        ">
+          {Static.ONGOING_PROJECT.INTRO}
+        </p>
+        <p className="
+          text-base
+          font-normal
+          text-white-100
+
+          tablet:text-xl
+        ">
+          {Static.ONGOING_PROJECT.DESCRIPTION}
+        </p>
+      </Card>
     </main>
   )
 }

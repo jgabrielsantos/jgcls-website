@@ -1,2 +1,4 @@
-export * from './Footer'
-export * from './Tabs'
+export * from './AppWrapper'
+export * from './Card'
+export * from './Chip'
+export * from './SideMenu'
