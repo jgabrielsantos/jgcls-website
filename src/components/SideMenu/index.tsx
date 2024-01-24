@@ -92,9 +92,6 @@ export const SideMenu = ({ menuIsOpen, closeMenu }: SideMenuProps) => {
           <ButtonLink to="/experience">
             Experience
           </ButtonLink>
-          <ButtonLink to="/contact">
-            Contact
-          </ButtonLink>
         </nav>
 
         <footer className="flex justify-center self-end items-center w-full gap-[55px] absolute">
