@@ -9,7 +9,7 @@ export const SideMenu = ({ menuIsOpen, closeMenu }: SideMenuProps) => {
     <aside className={`
       ${toggleMenuClass}
       w-screen
-      h-[calc(100dvh)]
+      h-screen
       fixed
       top-0
       left-0
@@ -20,12 +20,10 @@ export const SideMenu = ({ menuIsOpen, closeMenu }: SideMenuProps) => {
       items-center
       justify-start
 
-      tablet:static
+      tablet:sticky
       tablet:w-[450px]
-      tablet:py-24
+      tablet:py-8
       tablet:px-0
-      tablet:pb-8
-      overflow-hidden
     `}>
       <div
         className="flex justify-end items-center w-full tablet:hidden"
@@ -42,7 +40,7 @@ export const SideMenu = ({ menuIsOpen, closeMenu }: SideMenuProps) => {
         </button>
       </div>
 
-      <div className="relative grid grid-flow-row auto-rows-min justify-center items-start w-3/4 h-full gap-6 tablet:gap-16">
+      <div className="grid grid-flow-row auto-rows-min justify-center items-start w-3/4 h-full gap-6 tablet:gap-16">
         <header
           className="flex flex-col justify-start items-center w-full gap-2 tablet:gap-8"
         >
@@ -56,8 +54,8 @@ export const SideMenu = ({ menuIsOpen, closeMenu }: SideMenuProps) => {
               object-cover
               object-top
 
-              tablet:w-[200px]
-              tablet:h-[200px]
+              tablet:w-[150px]
+              tablet:h-[150px]
             "
           />
           <h1 className="
@@ -94,7 +92,7 @@ export const SideMenu = ({ menuIsOpen, closeMenu }: SideMenuProps) => {
           </ButtonLink>
         </nav>
 
-        <footer className="flex justify-center self-end items-center w-full gap-[55px] absolute">
+        <footer className="flex justify-center self-end items-center w-full gap-[55px]">
           <a href="mailto:jgclsdev@gmail.com">
             <img
               src={imageList.Gmail.src}

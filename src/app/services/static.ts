@@ -14,21 +14,21 @@ export const Static = {
     },
     {
       ICON: {
-        SRC: imageList.TechnicalPlanningIcon.src,
-        ALT: imageList.TechnicalPlanningIcon.alt
-      },
-      NAME: 'Technical Planning',
-      INTRO: 'Selecting the right technology for your project can be a daunting task.',
-      DESCRIPTION: 'My service caters to those looking to carefully evaluate their project\'s needs and explore the most suitable technical solutions.'
-    },
-    {
-      ICON: {
         SRC: imageList.BugAnalysisIcon.src,
         ALT: imageList.BugAnalysisIcon.alt
       },
       NAME: 'Bug Analysis',
       INTRO: 'Numerous systems operate with undetected bugs.',
       DESCRIPTION: 'If you\'re seeking a thorough analysis of your product , my service is tailored for you. I focus on identifying hidden issues to enhance your product\'s performance.'
+    },
+    {
+      ICON: {
+        SRC: imageList.TechnicalPlanningIcon.src,
+        ALT: imageList.TechnicalPlanningIcon.alt
+      },
+      NAME: 'Technical Planning',
+      INTRO: 'Selecting the right technology for your project can be a daunting task.',
+      DESCRIPTION: 'My service caters to those looking to carefully evaluate their project\'s needs and explore the most suitable technical solutions.'
     }
   ]
 }

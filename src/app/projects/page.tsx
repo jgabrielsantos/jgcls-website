@@ -12,7 +12,7 @@ const Projects = () => {
       gap-4
       items-start
 
-      tablet:pt-24
+      tablet:pt-16
       tablet:px-10
       tablet:grid
       tablet:grid-cols-2
