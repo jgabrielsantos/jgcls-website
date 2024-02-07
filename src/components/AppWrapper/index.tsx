@@ -17,6 +17,8 @@ export const AppWrapper = ({ children }: Record<string, React.ReactNode>) => {
       justify-center
       items-start
       bg-grayscale-700
+      sticky
+
       tablet:flex-row
     `}>
       {isMobile ? (<Header />) : (<SideMenu menuIsOpen />)}
